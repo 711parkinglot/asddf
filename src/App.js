@@ -1,49 +1,40 @@
 import React, { Component } from "react";
 
-// class based component
 class App extends Component {
   state = {
-    firstName: "alina",
-    age: 20,
-    designation: "developer",
-    city: "pune",
-    arr: [90, 30, 39],
+    firstName: "Jean",
+    age: 27,
+    designation: "Researcher",
+    city: "Berlin",
+    arr: [85, 76, 34],
     contact: {
-      email: "admin@gmail.com",
+      email: "jeandoe@gmail.com",
     },
     employeeData: [
       {
-        name: "",
-        age: 22,
+        name: "Myrtle",
+        age: 65,
         id: 3,
       },
       {
-        name: "",
-        age: 24,
+        name: "Misty",
+        age: 35,
         id: 2,
       },
       {
-        name: "",
-        age: 25,
+        name: "Fiona",
+        age: 55,
         id: 1,
       },
     ],
   };
 
   handleUpdate = () => {
-    // this is referring to App
-    // to update state
     this.setState({
-      designation: "manager",
-      age: 30,
+      designation: "Scientist",
+      age: 44,
     });
   };
-
-  // whenever state updates, re-rendering happens ( render method is called again)
-  render() {
-    return (
-      // this is referring to App
-      // JSX
       <div>
         <p>
           My name is {this.state.firstName} age: {this.state.age}, working as a{" "}
@@ -63,22 +54,3 @@ class App extends Component {
 }
 
 export default App;
-
-// reconcilation process
-// diffing algo
-
-{
-  /* in html 
-<button onclick="handle()"></button>
-
-handle = () => {
-  document.getElementById("display").innerHTML = ""
-}
-*/
-}
-
-// jsx -> plain js
-
-// babel => transpiler + compiler
-
-//run => npm i 
